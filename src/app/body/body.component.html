@@ -1,0 +1,32 @@
+<div class="body" [ngClass]="getBodyClass()" style="background: #272828">
+
+  <div class="row">
+    <div class="col-5">
+      <div class="input-group ">
+        <div class="input-group-prepend">
+      <span class="input-group-text" >
+        <i class="fa fa-search" ></i>
+      </span>
+        </div>
+        <input type="text" class="form-control" placeholder="Tìm kiếm" aria-label="Username" >
+      </div>
+    </div>
+
+
+    <div class="col-7" >
+      <a href="" class="mt-2" style="color: white;font-size: 16px; float: right" routerLink="/login">
+        <span class="sidenav-link-text">Đăng ký/Đăng nhập</span>
+      </a>
+    </div>
+  </div>
+
+
+  <div class="container-fluid mt-3">
+    <router-outlet></router-outlet>
+  </div>
+
+  <div>
+
+  </div>
+
+</div>
